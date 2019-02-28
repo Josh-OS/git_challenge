@@ -28,18 +28,8 @@
         	'last_name' => '',        
         	'gen_der' => '',
         	'a_ge' => '',
-        
-        
+           
 			],
-
-    	[
-        	'first_name' => 'Pam',
-        	'last_name' => 'Usi',
-        	'gen_der' => 'Femail',
-        	'a_ge' => '24',
-        
-        
-    	]
    
 	];
 

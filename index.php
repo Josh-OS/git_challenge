@@ -33,10 +33,10 @@
 			],
 
     	[
-        	'first_name' => '',
-        	'last_name' => '',
-        	'gen_der' => '',
-        	'a_ge' => '',
+        	'first_name' => 'Pam',
+        	'last_name' => 'Usi',
+        	'gen_der' => 'Femail',
+        	'a_ge' => '24',
         
         
     	]
@@ -45,13 +45,23 @@
 
 
 	//Input to arrays
-	$phonebook['first_name'] = $_POST['fname'];
-	$phonebook['last_name'] = $_POST['lname'];
-	$phonebook['gen_der'] = $_POST['gender'];
-	$phonebook['a_ge'] = $_POST['age'];
+	$phonebook[0]['first_name'] = $_POST['fname'];
+	$phonebook[0]['last_name'] = $_POST['lname'];
+	$phonebook[0]['gen_der'] = $_POST['gender'];
+	$phonebook[0]['a_ge'] = $_POST['age'];
 
 
-	
+
+	// To CSV
+	$fp = fopen('file.csv', 'w');
+
+	foreach ($phonebook as $info) {
+		fputcsv($fp, $info);
+	}
+	fclose($fp);
+
+
+
 
 	//Visual output
 	echo "Firstname:&nbsp&nbsp&nbsp" . $phonebook['first_name'] . "<br>";
@@ -60,9 +70,6 @@
 	echo "Age:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . $phonebook['a_ge'] . "<br>";
 
 
- 	
-
- 	// echo $phonebook['first_name'] . " is the value";
 
 	?>
 

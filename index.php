@@ -54,10 +54,10 @@
 
 
 	//Visual output
-	echo "Firstname:&nbsp&nbsp&nbsp" . $phonebook['first_name'] . "<br>";
-	echo "Last name:&nbsp&nbsp" . $phonebook['last_name'] . "<br>";
-	echo "Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . $phonebook['gen_der'] . "<br>";
-	echo "Age:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . $phonebook['a_ge'] . "<br>";
+	echo "Firstname:&nbsp&nbsp&nbsp" . $phonebook[0]['first_name'] . "<br>";
+	echo "Last name:&nbsp&nbsp" . $phonebook[0]['last_name'] . "<br>";
+	echo "Gender:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . $phonebook[0]['gen_der'] . "<br>";
+	echo "Age:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp" . $phonebook[0]['a_ge'] . "<br>";
 
 
 

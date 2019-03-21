@@ -1,5 +1,5 @@
 <?php
-echo "executed";
+
 $data = $_POST;
 $data['id'] = uniqid();
 
